@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('locations.index');
+    return view('welcome');
 });
 
 Route::get('/location',[\App\Http\Controllers\Admin\LocationController::class,'index'])->name('location.index');
